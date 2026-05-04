@@ -26,9 +26,9 @@ export default function Home() {
   const handleOpenWalletModal = () => router.push("/connect");
   return (
     <PageContainer>
-      <Navbar />
+      <Navbar onConnectWallet={handleOpenWalletModal} />
       <Main>
-        <Hero />
+        <Hero  onConnectWallet={handleOpenWalletModal}/>
         <Ratings />
         <Partners />
         <Features onConnectWallet={handleOpenWalletModal} />

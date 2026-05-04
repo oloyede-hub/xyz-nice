@@ -69,7 +69,7 @@ const ButtonText = styled.span`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ onConnectWallet }) => {
   return (
     <Nav>
       <TickerTape />
@@ -79,7 +79,7 @@ const Navbar = () => {
           <Image src="/logo_dapp.png" alt="logo" width={25} height={25} priority style={{ marginInline:"10px"}}/>
           <h3>DAPP</h3>
         </Logo>
-        <ConnectButton>
+        <ConnectButton onClick={onConnectWallet}>
           <ButtonGradient />
           <ButtonText>
             Connect Wallet

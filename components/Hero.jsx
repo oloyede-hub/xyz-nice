@@ -157,7 +157,7 @@ const ButtonText = styled.span`
 `;
 
 
-const Hero = () => {
+const Hero = ({ onConnectWallet }) => {
   return (
     <HeroSection>
       {/* Background Glow/Gradient */}
@@ -178,8 +178,8 @@ const Hero = () => {
           </Subtext>
 
           {/* CTA Button */}
-          <CTAButton>
-            <ButtonText>Get Started</ButtonText>
+          <CTAButton onClick={onConnectWallet}>
+            <ButtonText >Get Started</ButtonText>
           </CTAButton>
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: "380px", minHeight: "380px", maxWidth: "480px", maxHeight: "480px", width: "32vw", height: "32vw" }}>
