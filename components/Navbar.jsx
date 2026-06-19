@@ -51,7 +51,7 @@ const ConnectButton = styled.button`
 const ButtonGradient = styled.span`
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #00d4ff, #b026ff);
+  background: linear-gradient(135deg, #00ffff, #0072ff);
   transition: all 0.3s ease-out;
 
   ${ConnectButton}:hover & {
